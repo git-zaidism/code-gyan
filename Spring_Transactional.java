@@ -19,7 +19,9 @@ public void createUser (User user) {
 
 ----------------------------------------------------------------------------------------------------------------------------
 /* The loadUserByUsername uses a read-only transaction, and since we are using Hibernate, Spring performs
-some read-only optimizations as wel.
+some read-only optimizations as well.
+
 On the other hand, the createUser has to write to the database. Hence, it overrides the readonly attribute
-value with the default setting given by the @Transactional annotation, which is readOnly=false, therefore */
+value with the default setting given by the @Transactional annotation, which is readOnly=false, therefore making
+the transaction read-write*/
 ----------------------------------------------------------------------------------------------------------------------------
