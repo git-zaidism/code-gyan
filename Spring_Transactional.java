@@ -3,18 +3,18 @@
 
 @Service
 @Transactional(readOnly = true)
-public class Userservice implements UserDetailsService
+public class Userservice implements UserDetailsService {
 
-@Override
-public UserDetails loadUserByUsername (String username)
-throws UsernameNot FoundException {
-...
-}
+    @Override
+    public UserDetails loadUserByUsername (String username)
+    throws UsernameNot FoundException {
+    ...
+    }
 
-
-@Transactional
-public void createUser (User user) {
-...
+    @Transactional
+    public void createUser (User user) {
+    ...
+    }
 }
 
 ----------------------------------------------------------------------------------------------------------------------------
