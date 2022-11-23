@@ -1,3 +1,5 @@
+
+
 📌 Allow pagination and filtering
 
 Some endpoints may return substantial amounts of data that slow down a system.
@@ -32,3 +34,5 @@ Caching allows users to access data faster because it is stored locally, meaning
 
 Timeouts cause a request to fail after a specified amount of time.
 This is useful when there is a network issue, and the request cannot be completed, or a user sends too much data. This connection is closed instead of remaining open.
+
+
