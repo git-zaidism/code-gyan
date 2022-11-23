@@ -1,0 +1,34 @@
+📌 Allow pagination and filtering
+
+Some endpoints may return substantial amounts of data that slow down a system.
+Pagination and filtering avoid this by returning only a certain number of results at a time. This improves performance and reduces the usage of server resources.
+
+📌 Versioning
+
+If you’re making changes to your API that could potentially break it and the client apps that use it, it’s crucial to version it to have previous versions as a backup.
+This also lets you phase out old endpoints and introduce updated ones with new features.
+
+📌 Use JSON
+
+JSON is the standard for transferring data. JavaScript has built-in methods to parse JSON quickly, and it is supported in almost all programming languages.
+For simplicity, APIs should accept JSON payloads, and endpoints should return JSON as a response.
+
+📌Use nouns for endpoint paths
+
+Endpoint paths should always be named in reference to the entity they represent, for example, ‘articles,’ ‘users,’ ‘posts.’
+Endpoints paths should never be verbs because the HTTP request is our verb, e.g., GET, DELETE, PUT, etc.
+
+📌Maintain good security practices
+
+As with any client-server communication, SSL/TLS security is a must if data is to be kept encrypted and safe. Without it, data is at risk of being exposed.
+
+
+📌Use caching
+
+Using Cache-Control headers will allow users to make effective use of cached data.
+Caching allows users to access data faster because it is stored locally, meaning another request to the server to retrieve it is not needed.
+
+📌 Implement timeouts
+
+Timeouts cause a request to fail after a specified amount of time.
+This is useful when there is a network issue, and the request cannot be completed, or a user sends too much data. This connection is closed instead of remaining open.
