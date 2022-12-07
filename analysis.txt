@@ -1,0 +1,31 @@
+
+1)Enhancement: CXWFM-27311
+
+	Display the shift preference components
+	On enhanced trade model is opened Model should show start and end date from scope API
+
+2) Brief the approach for implementing:
+	Changes: 
+		-> Need to add logic to send the start date and end date from scope API, 
+		-> Going to utilize the existing API from MyscheduleController.js and pass the dates as params to the enhancedtrademodalcomponenet.js
+		-> Bind the date to the html 
+
+3)Dependency # (e.g. on Design/Platform/Product/Team etc.): NA
+ 
+4)DB Schema changes Clear and understood: NA
+
+5)Rest API clear and understood : Yes
+
+6)Request/Response Payload contract: NA
+
+7)Behaviors in case of exceptions/errors: NA
+
+8)Integration/Unit Tests : UT's 
+
+9)Concurrency/Security/Transactional/Performance/server calls: NA
+
+10)Notes for QA (Impacted areas) and inputs from QA# 
+
+11)Is it under Feature toggle = NA
+
+12)Swagger documentation = NA
